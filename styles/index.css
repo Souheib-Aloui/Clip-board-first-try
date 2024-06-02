@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root {
+
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+
+--DarkGrayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+button {
+  border: none;
+  border-radius: 2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: #fff;
+  background-color: var(--Light-Blue);
+  box-shadow: 1px 6px 6px var(--Grayish-Blue);
+  cursor: pointer;
+  
+}
+ul {
+  list-style-type: none;
+}
+body {
+  min-height: 100vh;
+  font-family: "Bai Jamjuree", sans-serif; 
+  font-weight: 400;
+}
+header {
+  display: grid;
+  gap: 1rem;
+}
+.header-img {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+}
+
+.header-text {
+  padding: 1.25rem;
+  text-align: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.header-text h1,
+.download h2 {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: var(--DarkGrayish-Blue);
+}
+.header-text p,
+.download p {
+  color: var(--Grayish-Blue);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.button-flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.button-flex button {
+ width: 100%;
+ max-width: 360px;
+}
+
+.ios-btn {
+  background-color: var(--Strong-Cyan);
+  box-shadow: 1px 6px 4px var(--Strong-Cyan);
+  transition: opacity 0.15s;
+}
+.ios-btn:hover,
+.mac-btn:hover {
+  opacity: 0.6;
+}
+
